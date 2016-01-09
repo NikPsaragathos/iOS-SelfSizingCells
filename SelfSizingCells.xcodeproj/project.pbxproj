@@ -8,12 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		D45694C51C379A7700D44B76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45694C41C379A7700D44B76 /* AppDelegate.swift */; };
-		D45694C71C379A7700D44B76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45694C61C379A7700D44B76 /* ViewController.swift */; };
 		D45694CA1C379A7700D44B76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D45694C81C379A7700D44B76 /* Main.storyboard */; };
 		D45694CC1C379A7700D44B76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D45694CB1C379A7700D44B76 /* Assets.xcassets */; };
 		D45694CF1C379A7700D44B76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D45694CD1C379A7700D44B76 /* LaunchScreen.storyboard */; };
 		D45694DA1C379A7700D44B76 /* SelfSizingCellsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45694D91C379A7700D44B76 /* SelfSizingCellsTests.swift */; };
 		D45694E51C379A7700D44B76 /* SelfSizingCellsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45694E41C379A7700D44B76 /* SelfSizingCellsUITests.swift */; };
+		D45694F41C37AB5800D44B76 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45694F31C37AB5800D44B76 /* TableViewController.swift */; };
+		D45694F61C37AB6800D44B76 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45694F51C37AB6800D44B76 /* CollectionViewController.swift */; };
+		D45694FA1C37AB8500D44B76 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45694F81C37AB8500D44B76 /* CollectionViewCell.swift */; };
+		D45694FB1C37AB8500D44B76 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D45694F91C37AB8500D44B76 /* CollectionViewCell.xib */; };
+		D45694FE1C37AB9E00D44B76 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45694FC1C37AB9E00D44B76 /* TableViewCell.swift */; };
+		D45694FF1C37AB9E00D44B76 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D45694FD1C37AB9E00D44B76 /* TableViewCell.xib */; };
+		D45695011C37F7E100D44B76 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45695001C37F7E100D44B76 /* ViewModel.swift */; };
+		D45695031C37F84400D44B76 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45695021C37F84400D44B76 /* Quote.swift */; };
+		D45695071C37FCD100D44B76 /* quotes.plist in Resources */ = {isa = PBXBuildFile; fileRef = D45695061C37FCD100D44B76 /* quotes.plist */; };
+		D456950E1C38004B00D44B76 /* einstein.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D45695091C38004B00D44B76 /* einstein.jpg */; };
+		D456950F1C38004B00D44B76 /* gandhi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D456950A1C38004B00D44B76 /* gandhi.jpg */; };
+		D45695101C38004B00D44B76 /* martin_luther_king.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D456950B1C38004B00D44B76 /* martin_luther_king.jpeg */; };
+		D45695111C38004B00D44B76 /* maya_angelou.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D456950C1C38004B00D44B76 /* maya_angelou.jpg */; };
+		D45695121C38004B00D44B76 /* rowling.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D456950D1C38004B00D44B76 /* rowling.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +49,6 @@
 /* Begin PBXFileReference section */
 		D45694C11C379A7700D44B76 /* SelfSizingCells.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelfSizingCells.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D45694C41C379A7700D44B76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D45694C61C379A7700D44B76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D45694C91C379A7700D44B76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D45694CB1C379A7700D44B76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D45694CE1C379A7700D44B76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +59,20 @@
 		D45694E01C379A7700D44B76 /* SelfSizingCellsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelfSizingCellsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D45694E41C379A7700D44B76 /* SelfSizingCellsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfSizingCellsUITests.swift; sourceTree = "<group>"; };
 		D45694E61C379A7700D44B76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D45694F31C37AB5800D44B76 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		D45694F51C37AB6800D44B76 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		D45694F81C37AB8500D44B76 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		D45694F91C37AB8500D44B76 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		D45694FC1C37AB9E00D44B76 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		D45694FD1C37AB9E00D44B76 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		D45695001C37F7E100D44B76 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		D45695021C37F84400D44B76 /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		D45695061C37FCD100D44B76 /* quotes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = quotes.plist; sourceTree = "<group>"; };
+		D45695091C38004B00D44B76 /* einstein.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = einstein.jpg; sourceTree = "<group>"; };
+		D456950A1C38004B00D44B76 /* gandhi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gandhi.jpg; sourceTree = "<group>"; };
+		D456950B1C38004B00D44B76 /* martin_luther_king.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = martin_luther_king.jpeg; sourceTree = "<group>"; };
+		D456950C1C38004B00D44B76 /* maya_angelou.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = maya_angelou.jpg; sourceTree = "<group>"; };
+		D456950D1C38004B00D44B76 /* rowling.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rowling.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +123,12 @@
 		D45694C31C379A7700D44B76 /* SelfSizingCells */ = {
 			isa = PBXGroup;
 			children = (
+				D4BAF7C61C40F9060060DDA9 /* Temporary */,
+				D45695051C37FCC000D44B76 /* Resources */,
+				D45695041C37F89400D44B76 /* Model */,
+				D45694F71C37AB7000D44B76 /* Cells */,
+				D45694F21C37AAE500D44B76 /* View Controllers */,
 				D45694C41C379A7700D44B76 /* AppDelegate.swift */,
-				D45694C61C379A7700D44B76 /* ViewController.swift */,
 				D45694C81C379A7700D44B76 /* Main.storyboard */,
 				D45694CB1C379A7700D44B76 /* Assets.xcassets */,
 				D45694CD1C379A7700D44B76 /* LaunchScreen.storyboard */,
@@ -123,6 +153,63 @@
 				D45694E61C379A7700D44B76 /* Info.plist */,
 			);
 			path = SelfSizingCellsUITests;
+			sourceTree = "<group>";
+		};
+		D45694F21C37AAE500D44B76 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D45694F31C37AB5800D44B76 /* TableViewController.swift */,
+				D45695001C37F7E100D44B76 /* ViewModel.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D45694F71C37AB7000D44B76 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D45694FC1C37AB9E00D44B76 /* TableViewCell.swift */,
+				D45694FD1C37AB9E00D44B76 /* TableViewCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		D45695041C37F89400D44B76 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D45695021C37F84400D44B76 /* Quote.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D45695051C37FCC000D44B76 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D45695081C38003E00D44B76 /* images */,
+				D45695061C37FCD100D44B76 /* quotes.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D45695081C38003E00D44B76 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				D45695091C38004B00D44B76 /* einstein.jpg */,
+				D456950A1C38004B00D44B76 /* gandhi.jpg */,
+				D456950B1C38004B00D44B76 /* martin_luther_king.jpeg */,
+				D456950C1C38004B00D44B76 /* maya_angelou.jpg */,
+				D456950D1C38004B00D44B76 /* rowling.jpg */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		D4BAF7C61C40F9060060DDA9 /* Temporary */ = {
+			isa = PBXGroup;
+			children = (
+				D45694F81C37AB8500D44B76 /* CollectionViewCell.swift */,
+				D45694F91C37AB8500D44B76 /* CollectionViewCell.xib */,
+				D45694F51C37AB6800D44B76 /* CollectionViewController.swift */,
+			);
+			name = Temporary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,8 +317,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D45694CF1C379A7700D44B76 /* LaunchScreen.storyboard in Resources */,
+				D45694FF1C37AB9E00D44B76 /* TableViewCell.xib in Resources */,
+				D456950E1C38004B00D44B76 /* einstein.jpg in Resources */,
 				D45694CC1C379A7700D44B76 /* Assets.xcassets in Resources */,
+				D456950F1C38004B00D44B76 /* gandhi.jpg in Resources */,
+				D45695101C38004B00D44B76 /* martin_luther_king.jpeg in Resources */,
+				D45694FB1C37AB8500D44B76 /* CollectionViewCell.xib in Resources */,
+				D45695121C38004B00D44B76 /* rowling.jpg in Resources */,
+				D45695111C38004B00D44B76 /* maya_angelou.jpg in Resources */,
 				D45694CA1C379A7700D44B76 /* Main.storyboard in Resources */,
+				D45695071C37FCD100D44B76 /* quotes.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +351,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D45694C71C379A7700D44B76 /* ViewController.swift in Sources */,
+				D45694FE1C37AB9E00D44B76 /* TableViewCell.swift in Sources */,
+				D45694F61C37AB6800D44B76 /* CollectionViewController.swift in Sources */,
 				D45694C51C379A7700D44B76 /* AppDelegate.swift in Sources */,
+				D45694FA1C37AB8500D44B76 /* CollectionViewCell.swift in Sources */,
+				D45695011C37F7E100D44B76 /* ViewModel.swift in Sources */,
+				D45695031C37F84400D44B76 /* Quote.swift in Sources */,
+				D45694F41C37AB5800D44B76 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +498,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SelfSizingCells/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.behindtechlines.SelfSizingCells;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -409,6 +510,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SelfSizingCells/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.behindtechlines.SelfSizingCells;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -482,6 +584,7 @@
 				D45694EB1C379A7700D44B76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D45694EC1C379A7700D44B76 /* Build configuration list for PBXNativeTarget "SelfSizingCellsTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +593,7 @@
 				D45694EE1C379A7700D44B76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D45694EF1C379A7700D44B76 /* Build configuration list for PBXNativeTarget "SelfSizingCellsUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +602,7 @@
 				D45694F11C379A7700D44B76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
