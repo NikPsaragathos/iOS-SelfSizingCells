@@ -17,6 +17,6 @@ class Quote: NSObject {
         self.init()
         self.text = text
         self.imageName = imageName
-        self.personName = personName
+        self.personName = personName 
     }
 }

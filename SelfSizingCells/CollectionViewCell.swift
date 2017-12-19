@@ -12,7 +12,7 @@ let collectionViewCellIdentifier = "CollectionViewCell"
 class CollectionViewCell: UICollectionViewCell {
 
     override func awakeFromNib() {
-        super.awakeFromNib()
+        super.awakeFromNib() 
         // Initialization code
     }
 

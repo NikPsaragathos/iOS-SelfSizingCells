@@ -18,10 +18,10 @@ class TableViewController: UITableViewController {
         self.tableView.delegate = viewModel
         self.tableView.dataSource = viewModel
         
-        self.tableView.registerNib(UINib(nibName: "TableViewCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: tableViewCellIdentifier)
+        self.tableView.register(UINib(nibName: "TableViewCell", bundle: Bundle.main), forCellReuseIdentifier: tableViewCellIdentifier)
         
         self.tableView.rowHeight = UITableViewAutomaticDimension
-        self.tableView.estimatedRowHeight = 50;
+        self.tableView.estimatedRowHeight = 50; 
     }
 
     override func didReceiveMemoryWarning() {

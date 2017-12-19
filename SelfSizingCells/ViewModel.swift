@@ -19,13 +19,13 @@ class ViewModel: NSObject,UITableViewDelegate, UITableViewDataSource, UICollecti
     
     private func loadQuotes(){
         quotes = []
-        if let path = NSBundle.mainBundle().pathForResource("quotes", ofType: "plist"),let quotesArray = NSArray(contentsOfFile: path){
+        if let path = Bundle.main.path(forResource: "quotes", ofType: "plist"),let quotesArray = NSArray(contentsOfFile: path){
             
             for dictionary in quotesArray {
-                let dictionary = dictionary as! NSDictionary
-                let text = dictionary.valueForKey("text") as? String ?? ""
-                let imageName = dictionary.valueForKey("imageName") as? String
-                let personName = dictionary.valueForKey("person") as? String
+                let dictionary = dictionary as! NSDictionary 
+                let text = dictionary.value(forKey: "text") as? String ?? ""
+                let imageName = dictionary.value(forKey: "imageName") as? String
+                let personName = dictionary.value(forKey: "person") as? String
                 
                 let quote = Quote(text: text, imageName: imageName, personName: personName)
                 quotes.append(quote)
@@ -33,18 +33,18 @@ class ViewModel: NSObject,UITableViewDelegate, UITableViewDataSource, UICollecti
         }
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return quotes.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(tableViewCellIdentifier, forIndexPath: indexPath) as! TableViewCell
+    internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: tableViewCellIdentifier, for: indexPath as IndexPath) as! TableViewCell
         
         let quote = quotes[indexPath.row]
         cell.quoteTextLabel.text = quote.text
         cell.nameLabel.text = quote.personName
         
-        if let imageName = quote.imageName where !imageName.isEmpty{
+        if let imageName = quote.imageName, !imageName.isEmpty{
             cell.photoView?.image = UIImage(named: imageName)
             cell.photoWidthConstraint.constant = kDefaultPhotoWidth
             cell.photoRightMarginConstraint.constant = kDefaultPhotoRightMargin
@@ -61,12 +61,12 @@ class ViewModel: NSObject,UITableViewDelegate, UITableViewDataSource, UICollecti
         return cell
     }
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return quotes.count
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(collectionViewCellIdentifier, forIndexPath: indexPath) as! CollectionViewCell
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: collectionViewCellIdentifier, for: indexPath) as! CollectionViewCell
         
         return cell
     }
